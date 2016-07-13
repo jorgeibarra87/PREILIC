@@ -1,0 +1,53 @@
+/* CSS Document */
+body{
+font-family:arial;
+}
+table {
+	width: 500px;
+	border-collapse:collapse;
+	background-color:#CCCCCC;
+	border:1px solid #000000;
+	
+}
+
+#principal{
+background:#fff9e5;
+width:950px;
+border:1px solid #000000;
+margin:0 auto;
+border-radius: 10px;
+border-collapse:collapse;
+}
+#cabecera{
+background:url(../prueba/baner.png);
+width:920px;
+height:100px;
+border:1px solid #000000;
+margin:10px;
+border-radius: 10px;
+border-collapse:collapse;
+}
+
+#contenido{
+overflow: auto ! important;
+overflow: none;
+background:#fece2f;
+width:920px;
+border:1px solid #000000;
+margin:10px;
+float:left;
+border-radius: 10px;
+border-collapse:collapse;
+}
+.clear{
+clear:both;
+}
+#pie{
+background:#817865;
+width:920px;
+heigth:10px;
+border:1px solid #000000;
+margin:10px;
+border-radius: 10px;
+border-collapse:collapse;
+}
