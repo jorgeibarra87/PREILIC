@@ -31,8 +31,8 @@ return confirm( mensaje );
 <?php
 include('../logica/seguridad.php');
 include ('../conexion/base.php');
-include_once('adodb/adodb.inc.php');
-include_once('adodb/adodb-pager.inc.php');
+include('../conexion/adodb5/adodb.inc.php');
+include('../conexion/adodb5/adodb-pager.inc.php');
 $radicado=$_POST['radicado'];
 $conexion=mysql_connect('localhost','root','');
 mysql_select_db('plico',$conexion);

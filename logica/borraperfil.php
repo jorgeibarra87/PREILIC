@@ -21,8 +21,8 @@ body {
 <?php
 include('../logica/seguridad.php');
 include ('../conexion/base.php');
-include_once('adodb/adodb.inc.php');
-include_once('adodb/adodb-pager.inc.php');
+include('../conexion/adodb5/adodb.inc.php');
+include('../conexion/adodb5/adodb-pager.inc.php');
 $ID=$_POST['perfil'];
 $base=new base('localhost','root','','plico');
 $sql="DELETE FROM `plico`.`perfil` WHERE `perfil`.`id_perfil`=$ID";

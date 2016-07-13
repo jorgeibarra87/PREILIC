@@ -9,8 +9,8 @@
 <?php
 include('../logica/seguridad.php');
 include ('../conexion/base.php');
-include_once('adodb/adodb.inc.php');
-include_once('adodb/adodb-pager.inc.php');
+include('../conexion/adodb5/adodb.inc.php');
+include('../conexion/adodb5/adodb-pager.inc.php');
 
 $base=new base('localhost','root','','academico');
 $sql="SELECT `id_recurso`, `nombre_recurso`, `tipo_recurso` FROM `recurso`";

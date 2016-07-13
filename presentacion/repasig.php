@@ -9,8 +9,8 @@
 <?php
 include('../logica/seguridad.php');
 include ('../conexion/base.php');
-include_once('adodb/adodb.inc.php');
-include_once('adodb/adodb-pager.inc.php');
+include('../conexion/adodb5/adodb.inc.php');
+include('../conexion/adodb5/adodb-pager.inc.php');
 $radicado=$_POST['radicado'];
 $base=new base('localhost','root','','academico');
 $sql="SELECT `eventos`.`fecha_registro`,`eventos`.`num_radicado`,`eventos`.`nom_evento`,`eventos`.`fecha_inicio`,`eventos`.`fecha_fin`,`lugar`.`municipio`,`lugar`.`lugar`,`solicitante`.`solicitante`,`eventos`.`estado`,`eventos`.`fecha_apr`,`eventos`.`costo`,`eventos`.`resultado`,`eventos`.`beneficio`,`eventos`.`porcentaje` FROM eventos

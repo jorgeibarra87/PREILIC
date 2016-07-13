@@ -26,8 +26,8 @@ body {
 <?php
 include('../logica/seguridad.php');
 include ('../conexion/base.php');
-include_once('adodb/adodb.inc.php');
-include_once('adodb/adodb-pager.inc.php');
+include('../conexion/adodb5/adodb.inc.php');
+include('../conexion/adodb5/adodb-pager.inc.php');
 
 echo"<div id=\"principal\">
 <div id=\"cabecera\">
